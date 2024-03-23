@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de CSS Básico</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        .destaque {font-weight:bold;color:red;}
+        #conteudo{background-color: #333;color:white;padding: 10px;margin: 20px;}
+        #lista {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #lista li{
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        #lista li:hover{
+            background-color: #e0e0e0;
+        }
+        button {
+            color:white;
+            background-color:blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Bem-Vindo ao Exercício de CSS Básico</h1>
+            <p>Este é um paragrafo <span class="destaque">destacado</span><p>
+            <a href="#">
+                <button>
+                    Clique Aqui 
+                </button>
+                
+            </a>
+    </div>
+    <div id="conteudo">
+        <h1>Testando ID</h1>
+            <p>Mais um parágrafo!</p>
+    </div>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+        
+    
+
+
+</body>
+</html>
