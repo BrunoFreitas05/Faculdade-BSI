@@ -2,8 +2,10 @@ public class Lampada {
     private int potencia;
     private String tipo;
     private boolean acesa;
-    public Lampada(String tipo){;
-}
+    public Lampada(String tipo){
+        this.tipo = tipo;
+    }
+
 public int getPotencia(){
     return potencia;
 }
@@ -16,11 +18,11 @@ public String getTipo(){
 public void setTipo(String tipo){
     this.tipo=tipo;
 }
-public boolean isAcessa(){
+public boolean isAcesa(){
     return acesa;
 }
  public void setAcesa(boolean acessaa){
-    this.acesa=acesa;
+    return;
  }
  public void apagar(){
     System.out.println("Apagando");

@@ -1,0 +1,219 @@
+[22:08] Andrei Santos de Oliveira
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Aula7 - Introd. Front
+  </title>
+  <style>
+    body{
+        margin:0;
+        padding:0;
+        font-family: Arial,sans-serif;
+    }
+    header{
+        background-color: #333;
+        color:white;
+        padding: 10px 20px;
+    }
+    nav ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+    }
+    nav ul li{
+        display: inline;
+        margin-right: 20px;
+    }
+    nav ul li a{
+        color:white;
+        text-decoration: none;
+    }
+    main{
+        background-color: #E5E5E5;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        min-height: 80vh;
+    }
+    aside{
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+   aside ul{
+        list-style-type: none;
+        padding: 0;
+ 
+    }
+    aside ul li:hover{
+        background-color: gray;
+        list-style-type: none;
+       
+    }
+    section{
+        padding: 20px;
+    }
+    footer{
+        background-color: #333;
+        text-align: center;
+        color:white;
+        padding: 10px 20px;
+        clear: both;
+    }
+    .box{
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border:1px solid #ccc;
+        border-radius: 10px;
+    }
+    .box h3{
+        margin-top: 0;
+    }
+    .conteudo-container{
+        display:flex;
+        align-items:top;
+    }
+    .imagem-container{
+        flex: 0 0 auto;
+        margin-right: 20px;
+    }
+    .texto-container{
+        flex:1;
+    }
+    .botao-link{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;  
+    }
+    .botao-link:hover{
+        color:#0056b3;
+    }
+    .efeito-1:hover{
+        border-radius: 15px;    
+          transform:scale(1.05);
+        transition: transform 0.3s ease;
+       
+    }
+    .efeito-1{
+        border-radius: 15px;    
+        transition: transform 0.3s ease;
+       
+    }
+    section{
+        display: none;
+    }
+    section:target{
+        display:block;
+    }
+   
+   
+  </style>
+</head>
+ 
+<body>
+  <header>
+    <nav>
+      <h1>Meu site</h1>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+ 
+</html>
+<main>
+    <aside>
+        <h2>Barra Lateral</h2>
+        <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+       
+    </ul>
+</aside>
+        <section id ="inicio">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                <h3>Seção 1</h3>
+                <div class="conteudo-container">
+                    <div class="imagem-container">
+                        <img class="efeito-1" src="https://www.univem.edu.br/storage/posts/November2023/nDI2OTN24LeDCyJ0Av3n.png" width="500">
+                    </div>
+                        <div class="texto-container">
+                <h2>Autismo na Escola</h2>
+                    <p>Live com Aime Neize dos Reis
+                        Live imperdível com o tema "Autismo na Escola" ministrada pela especialista em Psicopedagogia, Educação Especial e Educação Infantil, Aime Neize dos Reis!
+                       
+                        Marque na sua agenda:
+                       
+                        Dia 09 de novembro, às 20h, no canal do Univem no Youtube.
+                       
+                        Uma oportunidade única para entender como a educação pode ser inclusiva e acolhedora para todos.
+                       
+                        Participe, compartilhe e ajude a construir um ambiente escolar mais inclusivo e empático! </p>
+                        <div class="botao-div">
+                            <a href="https://www.univem.edu.br/noticias/autismo-na-escola"class="botao-link">Saiba Mais</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+           
+        </section>
+        <section id ="sobre">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                <h3>Seção 2</h3>
+                <div class="conteudo-container">
+                    <div class="imagem-container">
+                        <img class="efeito-1" src="https://i.ytimg.com/vi/HsBhddAzQME/hqdefault.jpg" width="500" >
+                    </div>
+                        <div class="texto-container">
+                <h2>Projeto Autikids</h2>
+                    <p>Aplicação de comunicação alternativa de alta tecnologia voltada a melhorar a comunicação da criança portadora do espectro autista e sua inserção na sociedade. </p>
+                        <div class="botao-div">
+                            <a href="https://www.youtube.com/channel/UCNrB_yIPYKdFiffRBUgVCxw"class="botao-link">Saiba Mais</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+           
+        </section>
+        <section id ="contato">
+            <h2>Conteúdo Principal</h2>
+            <div class="box">
+                <h3>Seção 3</h3>
+                <div class="conteudo-container">
+                    <div class="imagem-container">
+                        <img class="efeito-1" src="https://www.webfx.com/wp-content/uploads/2022/08/github-logo.png" width="500">
+                    </div>
+                        <div class="texto-container">
+                <h2>GitHub</h2>
+                    <p>Me chamo Bruno, tenho 19 anos e estou cursando Bacharelado Sistemas de Informação: Univem - Centro Universitário Eurípedes De Marília
+                    </p>
+                        <div class="botao-div">
+                            <a href="https://github.com/BrunoFreitas05" class="botao-link">Saiba Mais</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+           
+        </section>
+       
+    </div>
+</main>
+<footer>
+    <p>Rodapé &copy;2024</p>
+</footer>
+</body>
+</html>
+ 

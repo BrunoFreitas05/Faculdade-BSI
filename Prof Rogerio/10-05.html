@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Front-End</title>
+  <link rel="stylesheet" href="10-05.css">
+</head>
+<body>
+  <header>
+    <h1>Layout Simples</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="section-container">
+      <section>
+        <div class="box">
+          <h2>Tópico 1</h2>
+          <p>Dragon Ball é um dos desenhos mais famosos do Mundo.</p>
+          <br>
+          <img src="https://assetsio.gnwcdn.com/dragon-ball-games-battle-hour-anunciada-para-19-e-20-de-fevereiro-1640013929236.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp" alt="Imagem 1">
+        </div>
+      </section>
+      <section>
+        <div class="box">
+          <h2>Tópico 2</h2>
+          <p>Akyra Toyama é o responsável pela criação dos personagens</p>
+          <br>
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/10/28/1763314412-95426bc53cf50c9fcccc6fd440de7365.png" alt="Imagem 2">
+        </div>
+      </section>
+      <section>
+        <div class="box">
+          <h2>Tópico 3</h2>
+          <form action="url-destino" method="get">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" email="email" value="ra@univem.edu.br" disabled>
+            <br>
+            <label for="message">Mensagem:</label>
+            <textarea id ="message" name="message" readonly>Teste de texto no textarea. </textarea>
+            <br>
+            <input  class="data"  type="date" name="dia">
+            <input  class="data"  type="time" name="horas">
+            <br>
+            <input  type="number" name="quant" min="10" max="30">
+            <input  type="range" name="volume" min="20" max="50">
+            <br>
+            <input type="color" name="cor">
+            <br>
+            <input type="file" name="document" accept=".pdf,.docx">
+            <br>
+            <input type="search" name="procura">
+            <p>Escolha seu plano de assinatura: </p>
+            <label><input type="radio" name ="plano" value="mensal">Mensal</label>
+            <label><input type="radio" name ="plano" value="mensal">Anual</label>
+            <label><input type="radio" name ="plano" value="vitalício">Vitalício</label>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>Avaliação de Front-End-Ciência da Computação e Sistemas de Informação</p>
+  </footer>
+</body>
+ 
+</html>
