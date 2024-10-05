@@ -1,0 +1,20 @@
+<div>
+    <h2> Todos os Eventos</h2>
+    <div>
+        <% if(events.length >0)%>
+            <% events.forEach(event=>{%>
+                <div>
+                    <h3> <%= event.titulo %>  </h3>
+                    <p> <%= event.descricao %> </p>
+                    <a href="/evento/%=event.id%>">
+                        Mais
+                    </a>
+                
+                </div>
+            <%}); %>
+        <%} else {%>
+            <p> Sem eventos cadastrados</p>
+        <% } %>        
+            
+    </div>
+</div>

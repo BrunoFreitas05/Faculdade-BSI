@@ -1,12 +1,11 @@
+require('dotenv').config();
+
 //Importa framework express,ejs,mangoose para a aplicação
 const express = require('express');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const Evento = require('./models/evento.js')
 
-//String de conexao com o banco Mongo
-const dbURL = "mongodb+srv://brunomfreitas014:051973@brunoclauster.9evnd.mongodb.net/?retryWrites=true&w=majority&appName=BrunoClauster";
-//Inicializar o express na aplicação
 const app = express();
 
 //Setar ejs como motor de visualização de aplicação
@@ -21,6 +20,28 @@ app.get('/',(req,res) =>{
 // app.listen(3000,()=>{
 //     console.log('Servidor rodando na porta 3000');
 // });
+
+
+app.post('/submit-evento', (req,res) =>{
+    const evento = new Evento(req.body);
+    evento.save()
+        .then((result)=>{
+            res.redirect('/');
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+});
+
+app.get('/', (req,res) =>{
+    Evento.find()
+        .then((result)=>{
+            res.render('index', {titile:'Todos eventos', events: result})
+        })
+        .catch((err) => {
+            console.error(err);
+        });
+});
 
 
 mongoose
