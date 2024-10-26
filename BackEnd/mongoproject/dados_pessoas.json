@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "670d27f1fd7f627431c52618"
+  },
+  "nome": "Afonso Liberato",
+  "idade": 35,
+  "email": "al@univem.edu.br"
+},
+{
+  "_id": {
+    "$oid": "670d4d86f4f605d99d605a1a"
+  },
+  "nome": "Marina Sabrina Campos",
+  "idade": 52,
+  "email": "marinasabrinacampos@manjubinhafilmes.com.br"
+},
+{
+  "_id": {
+    "$oid": "670d4d86f4f605d99d605a1b"
+  },
+  "nome": "Luiz Filipe Figueiredo",
+  "idade": 58,
+  "email": "luiz_figueiredo@gripoantonin.com"
+},
+{
+  "_id": {
+    "$oid": "670d4d86f4f605d99d605a1c"
+  },
+  "nome": "Vitória Isabela da Mota",
+  "idade": 44,
+  "email": "vitoria_damota@cernizza.com.br"
+},
+{
+  "_id": {
+    "$oid": "670d4d86f4f605d99d605a1d"
+  },
+  "nome": "Manuel Márcio Mateus Carvalho",
+  "idade": 31,
+  "email": "manuel.marcio.carvalho@fojsc.unesp.br"
+},
+{
+  "_id": {
+    "$oid": "670d4d86f4f605d99d605a1e"
+  },
+  "nome": "Emily Regina Almeida",
+  "idade": 32,
+  "email": "emily_regina_almeida@elimco.com"
+}]
