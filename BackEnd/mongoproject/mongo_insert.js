@@ -9,7 +9,7 @@ const client = new MongoClient(uri);
 async function run(){
 
     try{
-        // conectar ao banco de dados e criara uma coleção (tabela)
+        // conectr ao banco de dados e criara uma coleção (tabela)
         const database = client.db("mydb");
         const pessoas = database.collection("pessoas");
 
